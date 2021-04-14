@@ -1,0 +1,188 @@
+/* Global styles */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(./2016BuickCascada.webp);
+  animation: mary-go-round 40s ease-in-out infinite forwards;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes mary-go-round {
+  0% {
+    background-image: url(./images-1.jpg);
+  }
+  25% {
+    background-image: url(./image-5.jpg);
+  }
+  50% {
+    background-image: url(./2016BuickCascada.webp);
+  }
+  75% {
+    background-image: url(./images-1.jpg);
+  }
+  100% {
+    background-image: url(./image-2.jpg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-bg {
+  width: 94%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(89, 110, 117, 0.548);
+  display: flex;
+}
+#main-bg.off {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.whiteText {
+  color: white;
+}
+
+.blackText {
+  color: black;
+  font-weight: bold;
+}
+
+.redText {
+  color: red;
+}
+
+li {
+  list-style: none;
+}
+
+/* Left NavBar Section */
+#LefttDiv {
+  width: 55%;
+  height: 100%;
+  display: block;
+}
+
+#navList {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+#navList li > ul {
+  display: none;
+}
+
+#navList li:hover > ul {
+  display: block;
+}
+
+#welcomeText {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 10%;
+  text-align: center;
+}
+
+/* Right HeaderInput Section */
+#rightDiv {
+  background-color: rgba(90, 76, 36, 0.521);
+  height: 100%;
+  width: 45%;
+  padding: 5%;
+}
+
+#headerBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.menu {
+  height: 0.75rem;
+  width: 1.5rem;
+  background-color: rgb(100, 93, 93);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu span {
+  display: block;
+  height: 25%;
+  width: 80%;
+  background-color: white;
+}
+
+input,
+button {
+  padding: 2%;
+}
+
+button {
+  background-color: rgba(70, 55, 15, 0.219);
+}
+
+#bgButton {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  border-radius: 50%;
+  text-align: center;
+  height: 5rem;
+  width: 5rem;
+  padding: 0;
+  font-weight: 800;
+  outline: none;
+}
+
+form {
+  margin-top: 15%;
+}
+
+#buyNowButton {
+  padding-left: 5rem;
+  margin-left: 7rem;
+  position: relative;
+}
+
+input {
+  position: absolute;
+  padding: 0.6rem 0.5rem;
+  z-index: 1;
+}
+
+#buyNowButton,
+input {
+  border-radius: 3rem;
+  border: 1px solid white;
+}
+
+p {
+  font-style: italic;
+  margin-top: 5%;
+  font-size: 0.75rem;
+}
+
+#bottomAbout {
+  margin-top: 30%;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Demo Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="main-bg">
+      <!-- Left NavBar Welcome Section -->
+      <section id="leftDiv">
+        <ul id="navList">
+          <li class="listItems">
+            <a href="#" class="blackText">MENU</a>
+          </li>
+          <li class="listItems">
+            <a href="#" class="blackText">CONTACT US</a>
+          </li>
+          <li class="listItems"><a href="#" class="blackText">SIGN IN</a></li>
+        </ul>
+        <div id="welcomeText">
+          Welcome to <span class="redText">FEMMY'S</span>GARAGE
+        </div>
+      </section>
+
+      <!-- Right HeaderInput Section  -->
+      <section id="rightDiv">
+        <header class="whiteText">
+          <div id="headerBar">
+            <div id="headerLogo">
+              <b><span class="redText">FEMMY'S</span>GARAGE</b>
+            </div>
+
+            <a href="#"
+              ><div class="menu">
+                <span></span>
+                <span></span>
+                <span></span></div
+            ></a>
+          </div>
+          <h1>Best place to buy your dream car!</h1>
+          <p>-Just enter the name of your dream car and proceed</p>
+        </header>
+        <form action="">
+          <input type="text" placeholder="enter your car name here" />
+          <button id="buyNowButton" class="whiteText"><b>Buy Now</b></button>
+        </form>
+        <p><a href="#" class="whiteText">-or specicy parameters manually</a></p>
+
+        <div id="bottomAbout">
+          <a href="#" class="whiteText"
+            >ABOUT <span class="redText">FEMMY'S</span>GARAGE</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <button id="bgButton">Click Me</button>
+
+    <script>
+      const bgButton = document.querySelector("#bgButton");
+      const mainPage = document.querySelector("#main-bg");
+
+      bgButton.addEventListener("click", () => {
+        mainPage.classList.toggle("off");
+      });
+    </script>
+  </body>
+</html>
